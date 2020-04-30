@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Food selectedFood = food.get(position);
-                Toast.makeText(MainActivity.this,selectedFood.getName()+"Star:"+selectedFood.isStar(),Toast.LENGTH_LONG).show();
+                Food selectFood = food.get(position);
+                Toast.makeText(MainActivity.this,selectFood.getName()+"Star:"+selectFood.isStar(),Toast.LENGTH_LONG).show();
             }
         });
 
